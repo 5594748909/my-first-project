@@ -1,0 +1,19 @@
+{
+  "name": "ai-haigui-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:web",
+    "dev:web": "npm --prefix haigui-web run dev",
+    "dev:server": "npm --prefix haigui-server run dev",
+    "start:server": "npm --prefix haigui-server run start",
+    "build": "npm run build:web",
+    "build:web": "npm --prefix haigui-web run build",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
