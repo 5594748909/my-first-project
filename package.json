@@ -1,22 +1,11 @@
 {
-  "name": "ai-haigui-game",
+  "name": "my-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "npm run dev:web",
-    "dev:web": "npm --prefix haigui-web run dev",
-    "dev:server": "npm --prefix haigui-server run dev",
-    "start:server": "npm --prefix haigui-server run start",
-    "build": "npm run build:web",
-    "build:web": "npm --prefix haigui-web run build",
-    "test": "echo \"No tests\" && exit 0"
+    "build": "npx tsc",
+    "dev": "tsc --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "typescript": "^5.0.0"
   }
 }
