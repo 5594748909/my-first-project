@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd haigui-web && npm install",
+  "buildCommand": "cd haigui-web && npm run build",
+  "outputDirectory": "haigui-web/dist"
+}
