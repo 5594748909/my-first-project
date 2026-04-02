@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Caches
+.vite/
+**/.vite/
+.turbo/
+**/.turbo/
+.cache/
+**/.cache/
+.next/
+**/.next/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE/editor
+.idea/
+.vscode/
+*.suo
+*.ntuser
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+.eslintcache
