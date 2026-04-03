@@ -2,14 +2,14 @@
   "name": "ai-haigui-game",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "haigui-server/index.js",
   "scripts": {
     "dev": "npm run dev:web",
     "dev:web": "npm --prefix haigui-web run dev",
     "dev:server": "npm --prefix haigui-server run dev",
     "start": "node haigui-server/index.js",
     "start:server": "npm --prefix haigui-server run start",
-    "build": "npm ci --prefix haigui-web && npm run build:web",
+    "build": "npm ci --prefix haigui-web && npm run build:web && npm ci --prefix haigui-server",
     "build:web": "npm --prefix haigui-web run build",
     "test": "echo \"No tests\" && exit 0"
   },

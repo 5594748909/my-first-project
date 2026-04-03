@@ -10,7 +10,8 @@ dotenv.config({ path: envPath })
 dotenv.config({ path: envLocalPath, override: true })
 
 const app = express()
-const PORT = process.env.PORT ? Number(process.env.PORT) : 3000
+const PORT = Number(process.env.PORT) || 3000
+const HOST = process.env.HOST || '0.0.0.0'
 
 const DEEPSEEK_API_URL = process.env.DEEPSEEK_API_URL
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY
@@ -194,7 +195,7 @@ app.get('/', (req, res) => {
   res.type('text').send('haigui-server is running')
 })
 
-app.listen(PORT, () => {
-  console.log(`Server listening at http://127.0.0.1:${PORT}`)
+app.listen(PORT, HOST, () => {
+  console.log(`Server listening on http://${HOST}:${PORT}`)
 })
 
